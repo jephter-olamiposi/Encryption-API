@@ -1,0 +1,14 @@
+[package]
+name = "secure_encryption_api"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+actix-web = "4.0"             # Web framework for handling HTTP requests
+serde = { version = "1.0", features = ["derive"] } # JSON serialization and deserialization
+serde_json = "1.0"            # JSON handling
+rsa = "0.8.0"                 # RSA encryption library
+rand = "0.8.5"                # Random number generation for secure key generation
+base64 = "0.13.0"             # Base64 encoding for transmission safety
+dotenv = "0.15.0"             # For managing environment variables
